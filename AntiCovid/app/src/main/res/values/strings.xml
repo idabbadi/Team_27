@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Anti Covid</string>
+    <string name="action_Login">Login</string>
+    <string name="action_Registration">Registration</string>
+    <string name="anticovid_app">ANTICOVID APP</string>
+    <string name="welcome">WELCOME</string>
+    <string name="reason">Using this application helps delay the spread of coronavirus</string>
 </resources>
