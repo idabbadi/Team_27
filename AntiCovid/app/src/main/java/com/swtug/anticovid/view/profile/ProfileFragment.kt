@@ -25,6 +25,7 @@ class ProfileFragment : BaseFragment() {
     private lateinit var toggleGroupLanguage: MaterialButtonToggleGroup
     private lateinit var btnlogout: Button
     private lateinit var btnedit: Button
+    private lateinit var btnChangePassword: Button
     private lateinit var editTextName: EditText
     private lateinit var editTextSurname: EditText
     private lateinit var editTextEMail: EditText
@@ -64,6 +65,7 @@ class ProfileFragment : BaseFragment() {
     private fun initFields(view: View) {
         btnlogout = view.findViewById(R.id.logoutbutton)
         btnedit = view.findViewById(R.id.button2)
+        btnChangePassword = view.findViewById(R.id.btnChangePassword)
 
         btnChinese = view.findViewById(R.id.btn_chinese)
         btnEnglish = view.findViewById(R.id.btn_english)
@@ -112,6 +114,10 @@ class ProfileFragment : BaseFragment() {
 
         btnedit.setOnClickListener {
             storeNewUserData()
+
+        }
+        btnChangePassword.setOnClickListener{
+            findNavController().navigate(R.id.action_profileFragment_to_changePasswordFragment)
 
         }
     }
